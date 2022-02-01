@@ -1,0 +1,14 @@
+.design-One,
+.design-Two {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+.design-One {
+    background-color: black;
+    color: white;
+}
+
+.design-Two {
+    background-color: yellow;
+}
