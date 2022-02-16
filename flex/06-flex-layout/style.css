@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +27,55 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* top*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: grey;
+}
+
+.left-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.right-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+/* middle*/
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bottom*/
+.footer {
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+/* it is necessary to define margin and padding as 0 to make the dot indentation dissapear */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* gets rid of the underline for all links */
+a {
+  text-decoration: none;
+  color: grey;
 }
